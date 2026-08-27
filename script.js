@@ -52,7 +52,7 @@
     footer.innerHTML = `
       <footer class="site-footer" id="contact">
         <h2>Thanks for stopping by!</h2>
-        <p>Feel free to download my <a href="${root}assets/yiwei-he-resume.pdf">resume</a> or check out my <a href="https://www.linkedin.com/" rel="noreferrer">LinkedIn</a> profile. Don&apos;t hesitate to connect with me. If you have any questions, reach out to me via pigeon post… okay, fine, <a href="mailto:hehegg321@gmail.com">email</a> works too.</p>
+        <p>Feel free to download my <a href="${root}assets/yiwei-he-resume.pdf" target="_blank" rel="noreferrer">resume</a> or check out my <a href="https://www.linkedin.com/in/yiwei-he-484b6322b" target="_blank" rel="noreferrer">LinkedIn</a> profile. Don&apos;t hesitate to connect with me. If you have any questions, reach out to me via pigeon post… okay, fine, <a href="mailto:hehegg321@gmail.com">email</a> works too.</p>
         <p class="copyright">© 2024 by Yiwei He Design Portfolio.</p>
       </footer>`;
   }
