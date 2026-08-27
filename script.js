@@ -5,30 +5,35 @@
   const footer = document.querySelector("[data-site-footer]");
   const current = body.dataset.page || "home";
   const affiliateAssets = [
-    ["affiliate-capture-01.png", 980, 737],
-    ["affiliate-capture-02.png", 980, 662],
-    ["affiliate-capture-03.png", 979, 703],
-    ["affiliate-capture-04.png", 979, 636],
-    ["affiliate-capture-05.png", 979, 682],
-    ["affiliate-capture-06.png", 980, 639],
-    ["affiliate-capture-07.png", 980, 256],
-    ["affiliate-capture-08.png", 980, 641],
-    ["affiliate-capture-09.png", 980, 282],
-    ["affiliate-capture-10.png", 980, 721],
-    ["affiliate-capture-11.png", 855, 398],
-    ["affiliate-capture-12.png", 980, 196],
-    ["affiliate-capture-13.png", 980, 737],
-    ["affiliate-capture-14.png", 980, 461],
-    ["affiliate-capture-15.png", 980, 455],
-    ["affiliate-capture-16.png", 980, 246],
-    ["affiliate-capture-17.png", 980, 669],
-    ["affiliate-capture-18.png", 980, 190],
-    ["affiliate-capture-19.png", 980, 124],
-    ["affiliate-capture-20.png", 980, 582],
-    ["affiliate-capture-21.png", 980, 577],
-    ["affiliate-capture-22.png", 980, 844],
-    ["affiliate-capture-23.png", 980, 616],
-    ["affiliate-capture-24.png", 908, 540],
+    ["affiliate-capture-01.PNG", 1524, 877],
+    ["affiliate-capture-02.PNG", 1520, 795],
+    ["affiliate-capture-03.PNG", 1493, 842],
+    ["affiliate-capture-04.PNG", 1499, 786],
+    ["affiliate-capture-05.PNG", 1516, 814],
+    ["affiliate-capture-06.PNG", 1515, 846],
+    ["affiliate-capture-07.PNG", 1520, 308],
+    ["affiliate-capture-08.PNG", 1522, 843],
+    ["affiliate-capture-09.PNG", 1520, 354],
+    ["affiliate-capture-10.PNG", 1522, 858],
+    ["affiliate-capture-11.PNG", 1516, 486],
+    ["affiliate-capture-12.PNG", 1522, 234],
+    ["affiliate-capture-13.PNG", 1522, 878],
+    ["affiliate-capture-14.PNG", 1402, 876],
+    ["affiliate-capture-15.PNG", 1405, 858],
+    ["affiliate-capture-16.PNG", 1399, 865],
+    ["affiliate-capture-17.PNG", 1402, 817],
+    ["affiliate-capture-18.PNG", 1397, 650],
+    ["affiliate-capture-19.PNG", 1397, 660],
+    ["affiliate-capture-20.PNG", 1400, 357],
+    ["affiliate-capture-21.PNG", 1396, 738],
+    ["affiliate-capture-22.PNG", 1401, 209],
+    ["affiliate-capture-23.PNG", 1459, 861],
+    ["affiliate-capture-24.PNG", 1458, 183],
+    ["affiliate-capture-25.PNG", 1456, 867],
+    ["affiliate-capture-26.PNG", 1460, 823],
+    ["affiliate-capture-27.PNG", 1458, 866],
+    ["affiliate-capture-28.PNG", 1458, 717],
+    ["affiliate-capture-29.PNG", 1916, 797],
   ];
 
   if (header) {
@@ -54,9 +59,22 @@
 
   const affiliateGallery = document.querySelector("[data-affiliate-gallery]");
   if (affiliateGallery) {
-    affiliateGallery.innerHTML = affiliateAssets.map(([name, width, height], index) => `
-      <figure class="asset-slot case-asset" data-src="assets/${name}" data-width="${width}" data-height="${height}" data-label="Affiliate case study panel ${String(index + 1).padStart(2, "0")}"></figure>
-    `).join("");
+    const affiliatePanel = ([name, width, height], index) => `
+      <figure class="asset-slot case-asset" data-src="assets/${name}" data-width="${width}" data-height="${height}" data-label="Affiliate case study panel ${String(index + 1).padStart(2, "0")}"></figure>`;
+    const openingPanels = affiliateAssets.slice(0, 12).map(affiliatePanel).join("");
+    const personaPanels = affiliateAssets.slice(12, 16).map((asset, index) => affiliatePanel(asset, index + 12)).join("");
+    const remainingPanels = affiliateAssets.slice(16).map((asset, index) => affiliatePanel(asset, index + 16)).join("");
+
+    affiliateGallery.innerHTML = `
+      ${openingPanels}
+      <details class="affiliate-personas">
+        <summary aria-label="Show or hide all four user persona cards">
+          <span class="affiliate-personas__expand">[Expand]</span>
+          <span class="affiliate-personas__hide">[Hide]</span>
+        </summary>
+        <div class="affiliate-personas__gallery">${personaPanels}</div>
+      </details>
+      ${remainingPanels}`;
   }
 
   document.querySelectorAll(".asset-slot[data-src]").forEach((slot) => {

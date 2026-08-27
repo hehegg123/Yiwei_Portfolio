@@ -15,34 +15,39 @@ The listed dimensions are the dimensions used by the original live portfolio. La
 
 ## Affiliate Marketer Collaboration Platform
 
-This original case study is a sequence of 24 image panels. Export or save each panel using the following names.
+This case study uses 29 image panels. Panels 13–16 are the four collapsible user-persona cards.
 
 | Filename | Size |
 |---|---:|
-| `affiliate-capture-01.png` | 980 × 737 px |
-| `affiliate-capture-02.png` | 980 × 662 px |
-| `affiliate-capture-03.png` | 979 × 703 px |
-| `affiliate-capture-04.png` | 979 × 636 px |
-| `affiliate-capture-05.png` | 979 × 682 px |
-| `affiliate-capture-06.png` | 980 × 639 px |
-| `affiliate-capture-07.png` | 980 × 256 px |
-| `affiliate-capture-08.png` | 980 × 641 px |
-| `affiliate-capture-09.png` | 980 × 282 px |
-| `affiliate-capture-10.png` | 980 × 721 px |
-| `affiliate-capture-11.png` | 855 × 398 px |
-| `affiliate-capture-12.png` | 980 × 196 px |
-| `affiliate-capture-13.png` | 980 × 737 px |
-| `affiliate-capture-14.png` | 980 × 461 px |
-| `affiliate-capture-15.png` | 980 × 455 px |
-| `affiliate-capture-16.png` | 980 × 246 px |
-| `affiliate-capture-17.png` | 980 × 669 px |
-| `affiliate-capture-18.png` | 980 × 190 px |
-| `affiliate-capture-19.png` | 980 × 124 px |
-| `affiliate-capture-20.png` | 980 × 582 px |
-| `affiliate-capture-21.png` | 980 × 577 px |
-| `affiliate-capture-22.png` | 980 × 844 px |
-| `affiliate-capture-23.png` | 980 × 616 px |
-| `affiliate-capture-24.png` | 908 × 540 px |
+| `affiliate-capture-01.PNG` | 1524 × 877 px |
+| `affiliate-capture-02.PNG` | 1520 × 795 px |
+| `affiliate-capture-03.PNG` | 1493 × 842 px |
+| `affiliate-capture-04.PNG` | 1499 × 786 px |
+| `affiliate-capture-05.PNG` | 1516 × 814 px |
+| `affiliate-capture-06.PNG` | 1515 × 846 px |
+| `affiliate-capture-07.PNG` | 1520 × 308 px |
+| `affiliate-capture-08.PNG` | 1522 × 843 px |
+| `affiliate-capture-09.PNG` | 1520 × 354 px |
+| `affiliate-capture-10.PNG` | 1522 × 858 px |
+| `affiliate-capture-11.PNG` | 1516 × 486 px |
+| `affiliate-capture-12.PNG` | 1522 × 234 px |
+| `affiliate-capture-13.PNG` | 1522 × 878 px — persona 1 |
+| `affiliate-capture-14.PNG` | 1402 × 876 px — persona 2 |
+| `affiliate-capture-15.PNG` | 1405 × 858 px — persona 3 |
+| `affiliate-capture-16.PNG` | 1399 × 865 px — persona 4 |
+| `affiliate-capture-17.PNG` | 1402 × 817 px |
+| `affiliate-capture-18.PNG` | 1397 × 650 px |
+| `affiliate-capture-19.PNG` | 1397 × 660 px |
+| `affiliate-capture-20.PNG` | 1400 × 357 px |
+| `affiliate-capture-21.PNG` | 1396 × 738 px |
+| `affiliate-capture-22.PNG` | 1401 × 209 px |
+| `affiliate-capture-23.PNG` | 1459 × 861 px |
+| `affiliate-capture-24.PNG` | 1458 × 183 px |
+| `affiliate-capture-25.PNG` | 1456 × 867 px |
+| `affiliate-capture-26.PNG` | 1460 × 823 px |
+| `affiliate-capture-27.PNG` | 1458 × 866 px |
+| `affiliate-capture-28.PNG` | 1458 × 717 px |
+| `affiliate-capture-29.PNG` | 1916 × 797 px |
 
 ## VR Assistant
 
@@ -87,22 +92,22 @@ This original case study is a sequence of 24 image panels. Export or save each p
 | `cats-competitor-articles.png` | 455 × 297 px | Web-article competitor |
 | `cats-competitor-pocket-pet.png` | 432 × 324 px | My Pocket Pet Kitty competitor |
 | `cats-waad.png` | 559 × 348 px | Work Activity Affinity Diagram |
-| `cats-flow-model.png` | 509 × 328 px | Usage Flow Model |
-| `cats-declarative-knowledge.jpg` | 136 × 183 px | Declarative knowledge visual |
-| `cats-procedural-knowledge.jpg` | 136 × 183 px | Procedural knowledge visual |
-| `cats-task-sequence.png` | 601 × 273 px | Task Sequence Model |
-| `cats-prototype-01.png` | 143 × 309 px | Prototype screen |
-| `cats-prototype-02.png` | 143 × 309 px | Prototype screen |
-| `cats-prototype-03.png` | 143 × 309 px | Prototype screen |
-| `cats-prototype-04.png` | 143 × 309 px | Prototype screen |
-| `cats-prototype-05.png` | 143 × 309 px | Prototype screen |
-| `cats-prototype-06.png` | 143 × 309 px | Prototype screen |
-| `cats-iteration-01-before.png` | 200 × 433 px | First-iteration before screen |
-| `cats-iteration-01-after.png` | 200 × 433 px | First-iteration after screen |
-| `cats-iteration-02.png` | 200 × 433 px | Second-iteration screens |
-| `cats-iteration-02.gif` | 251 × 453 px | Second-iteration animation |
-| `cats-iteration-03-touch.gif` | 251 × 453 px | Direct-touch animation |
-| `cats-iteration-03-tutorial.gif` | 251 × 453 px | Tutorial animation |
+| `Cats-Flow-model.png` | 509 × 328 px | Usage Flow Model |
+| `cats-declarative-knowledge.PNG` | 495 × 319 px | Complete Declarative Knowledge card graphic |
+| `cats-procedural-knowledge.png` | 507 × 319 px | Complete Procedural Knowledge card graphic |
+| `cats-task-sequence.png` | 1479 × 672 px | Task Sequence Model |
+| `cats-prototype-01.PNG` | 325 × 703 px | Prototype screen |
+| `cats-prototype-02.PNG` | 411 × 888 px | Prototype screen |
+| `cats-prototype-03.PNG` | 325 × 699 px | Prototype screen |
+| `cats-prototype-04.PNG` | 375 × 796 px | Prototype screen |
+| `cats-prototype-05.PNG` | 383 × 825 px | Prototype screen |
+| `cats-prototype-06.PNG` | 368 × 793 px | Prototype screen |
+| `cats-iteration-01-before.png` | 390 × 841 px | First-iteration before screen |
+| `cats-iteration-01-after.PNG` | 309 × 666 px | First-iteration after screen |
+| `cats-iteration-02.png` | 237 × 512 px | Second-iteration age and naming screen |
+| `cats-iteration-02.gif` | 284 × 512 px | Second-iteration animation |
+| `cats-iteration-03-touch.gif` | 284 × 512 px | Direct-touch animation |
+| `cats-iteration-03-tutorial.gif` | 284 × 512 px | Tutorial animation |
 
 ## Still needed from you
 

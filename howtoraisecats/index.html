@@ -102,112 +102,146 @@
         </div>
       </section>
 
-      <section class="case-section">
-        <h2>Data Analysis &amp; Modeling</h2>
-        <p>Based on the initial user and SME interviews, I developed Work Activity Notes and Minimum Viable Product requirements. These diagrams provided valuable guidelines for the early design process.</p>
-        <div class="asset-row asset-row--2">
-          <div><div class="asset-slot case-asset" data-src="assets/cats-waad.png" data-width="559" data-height="348" data-label="Cat care WAAD"></div><p class="figure-caption">Figure 1. Snapshot of the WAAD</p></div>
-          <div><div class="asset-slot case-asset" data-src="assets/cats-flow-model.png" data-width="509" data-height="328" data-label="Cat care usage flow model"></div><p class="figure-caption">Figure 2. Usage Flow Model</p></div>
+      <section class="case-section cats-analysis-section">
+        <h2 class="cats-analysis-title">Data Analysis &amp; Modeling</h2>
+        <p class="cats-analysis-intro">Based on the initial data collected through user interviews and SME interviews, I developed the following <strong>Work Activity Notes</strong> and <strong>Minimum Viable Products.</strong> These two diagrams provide valuable guidelines for the early design process.</p>
+
+        <figure class="cats-analysis-waad">
+          <div class="asset-slot case-asset" data-src="assets/cats-waad.png" data-width="559" data-height="348" data-label="Cat care WAAD"></div>
+          <figcaption>Figure.1&nbsp; Snapshot of the WAAD</figcaption>
+        </figure>
+
+        <div class="cats-analysis-mvp-row">
+          <p class="cats-analysis-caption">Figure.2&nbsp; List of Minimum requirements</p>
+          <aside class="cats-mvp-card" aria-labelledby="mvp-title">
+            <h3 id="mvp-title">MVP Needs:</h3>
+            <p><strong>MVP Needs #1:</strong> Adoption instruction which walks the user through the adoption process &amp; requirements, helps users to get an understanding of how the adoption process works.</p>
+            <p><strong>MVP Needs #2:</strong> Clinical instruction which shows the user what are the cat&apos;s regular clinical needs, and what the signs of a kitty need clinical care.</p>
+            <p><strong>MVP Needs #3:</strong> Cat Gesture change. The app should show different gestures of the cat and the means behind different cat gestures.</p>
+            <p><strong>MVP Needs #4:</strong> Hardware introduction. The app should help users get a basic understanding of the hardware needed for cat care.</p>
+            <p><strong>MVP Needs #5:</strong> Interactive cat model which reaction should teach the user about different pet zones of the cat.</p>
+            <p><strong>MVP Needs #6:</strong> Cost estimator. Provide a general cost for cat care; the cost should change depending on the options the user made in-app.</p>
+          </aside>
         </div>
-        <h3>MVP Needs</h3>
-        <p class="figure-caption figure-caption--standalone">List of minimum requirements identified from the research</p>
-        <ol>
-          <li><strong>Adoption instruction:</strong> Walk through the adoption process and requirements.</li>
-          <li><strong>Clinical instruction:</strong> Explain regular clinical needs and signs that a cat needs care.</li>
-          <li><strong>Cat gesture changes:</strong> Show different gestures and their meanings.</li>
-          <li><strong>Hardware introduction:</strong> Explain the equipment needed for cat care.</li>
-          <li><strong>Interactive cat model:</strong> Teach different petting zones through reactions.</li>
-          <li><strong>Cost estimator:</strong> Provide an estimated cost that changes with users&apos; choices.</li>
-        </ol>
+
+        <figure class="cats-analysis-flow">
+          <div class="asset-slot case-asset" data-src="assets/Cats-Flow-model.png" data-width="509" data-height="328" data-label="Cat care usage flow model"></div>
+          <figcaption>
+            <p>We created the following flow model to help us understand the current workplace of the user&apos;s process of learning how to raise a cat. The model indicates there are a variety of processes and they all provide different aspects of the knowledge such as adoption, clinic, hardware, etc.</p>
+            <span>Figure.3&nbsp; Usage Flow Model</span>
+          </figcaption>
+        </figure>
       </section>
 
-      <section class="case-section">
-        <h2>Design</h2>
-        <p>The main frustration we found was that cat-care knowledge is scattered across many sources, making it difficult to learn and comprehend as a whole. Some cat-care incidents also require a quick response, which is difficult if the owner must consciously recall unfamiliar knowledge.</p>
-        <h3>Solution</h3>
-        <p>Because the product aims to train users, we used knowledge transfer as the foundation of the design. Timon ten Berge and Rene van Hezewijk separate knowledge into two types: declarative knowledge and procedural knowledge.</p>
-        <div class="two-col">
-          <div class="knowledge-card">
-            <div class="asset-slot case-asset" data-src="assets/cats-declarative-knowledge.jpg" data-width="136" data-height="183" data-label="Books representing declarative knowledge"></div>
-            <h3>Declarative Knowledge</h3>
-            <p>Descriptive knowledge that can be encoded into long-term memory through repetition. Applying it requires retrieval and conscious processing, which can take time.</p>
-          </div>
-          <div class="knowledge-card">
-            <div class="asset-slot case-asset" data-src="assets/cats-procedural-knowledge.jpg" data-width="136" data-height="183" data-label="Bicycle representing procedural knowledge"></div>
-            <h3>Procedural Knowledge</h3>
-            <p>Knowledge of how to perform an activity. Once trained, it can become automated and require less conscious attention, allowing people to react more quickly.</p>
-          </div>
+      <section class="case-section cats-design-section">
+        <h2 class="cats-design-title">Design</h2>
+        <p class="cats-design-intro">The main frustration we&apos;ve found from the users is that there is a large amount of knowledge that needs to be learned. But this knowledge is all scattered around different sources, making it difficult to learn and comprehend as a whole. We have also realized that many incidents during the cat caring process require the user to react quickly. If the user does not understand the process well, it can be difficult to act on the spot, causing injury to the cat or the cat owner themselves.</p>
+
+        <div class="cats-solution-copy">
+          <h3>Solution</h3>
+          <p>As the product is aimed to train users on how to raise cats, we decided to utilize the concept of knowledge transfer as the main foundation of our design. Timon ten Berge and Rene van Hezewijk separated knowledge into two types: <strong>declarative knowledge</strong> and <strong>procedural knowledge.</strong></p>
         </div>
-        <p class="section-intro knowledge-summary">The research showed that most existing cat-care resources rely on declarative knowledge. That provides a quick general understanding, but urgent cat-care situations may require owners to react before they can consciously retrieve information. The application therefore combines explanation with repeated, realistic interaction so important responses can become procedural knowledge.</p>
+
+        <div class="cats-knowledge-grid" aria-label="Declarative and procedural knowledge cards">
+          <div class="asset-slot case-asset cats-knowledge-card-image" data-src="assets/cats-declarative-knowledge.PNG" data-width="495" data-height="319" data-label="Declarative Knowledge card"></div>
+          <div class="asset-slot case-asset cats-knowledge-card-image cats-knowledge-card-image--procedural" data-src="assets/cats-procedural-knowledge.png" data-width="495" data-height="319" data-label="Procedural Knowledge card"></div>
+        </div>
+
+        <p class="cats-knowledge-summary">Based on the data collection, we found that the current user&apos;s main method for learning cat care is mostly composed of declarative knowledge. Even though it can grant the user a quick and general understanding of what is needed to raise a cat, certain tasks in the cat-care process may require the cat owner to react through instinct instead of conscious decisions. If the knowledge is encoded into the owner&apos;s long-term memory, they can act before their brain needs to retrieve the information and make a conscious decision. It is therefore important that this type of knowledge be learned.</p>
       </section>
 
-      <section class="case-section">
-        <h2>Wireframe &amp; Prototype</h2>
-        <p>After collecting the necessary data and requirements, I began the design process by building a task sequence model. It represents a narrative of what users do and helps organize design decisions around user requirements.</p>
-        <div class="asset-slot case-asset" data-src="assets/cats-task-sequence.png" data-width="601" data-height="273" data-label="Task Sequence Model"></div>
-        <p class="figure-caption">Figure 3. Task Sequence Model</p>
-        <h3>Prototype Preview</h3>
-        <div class="asset-row asset-row--5">
-          <div class="asset-slot case-asset" data-src="assets/cats-prototype-01.png" data-width="143" data-height="309" data-label="Cat app prototype screen 1"></div>
-          <div class="asset-slot case-asset" data-src="assets/cats-prototype-02.png" data-width="143" data-height="309" data-label="Cat app prototype screen 2"></div>
-          <div class="asset-slot case-asset" data-src="assets/cats-prototype-03.png" data-width="143" data-height="309" data-label="Cat app prototype screen 3"></div>
-          <div class="asset-slot case-asset" data-src="assets/cats-prototype-04.png" data-width="143" data-height="309" data-label="Cat app prototype screen 4"></div>
-          <div class="asset-slot case-asset" data-src="assets/cats-prototype-05.png" data-width="143" data-height="309" data-label="Cat app prototype screen 5"></div>
-          <div class="asset-slot case-asset" data-src="assets/cats-prototype-06.png" data-width="143" data-height="309" data-label="Cat app prototype screen 6"></div>
+      <section class="case-section cats-wireframe-section">
+        <h2 class="cats-reference-title">Wireframe &amp; Prototype</h2>
+        <p class="cats-reference-copy">After collecting the necessary data and requirements, I started the design process by building a <strong>task sequence model.</strong> The task sequence model represents a narrative story of what users do or can do. It helps me to organize and match the design aspects with the requirement.</p>
+
+        <figure class="cats-task-model">
+          <div class="asset-slot case-asset" data-src="assets/cats-task-sequence.png" data-width="1479" data-height="672" data-label="Task Sequence Model"></div>
+          <figcaption>Figure.4 Task Sequence Model</figcaption>
+        </figure>
+
+        <h3 class="cats-preview-label">Preview:</h3>
+        <div class="cats-prototype-grid">
+          <div class="asset-slot case-asset" data-src="assets/cats-prototype-01.PNG" data-width="143" data-height="309" data-label="Cat app prototype screen 1"></div>
+          <div class="asset-slot case-asset" data-src="assets/cats-prototype-02.PNG" data-width="143" data-height="309" data-label="Cat app prototype screen 2"></div>
+          <div class="asset-slot case-asset" data-src="assets/cats-prototype-03.PNG" data-width="143" data-height="309" data-label="Cat app prototype screen 3"></div>
+          <div class="asset-slot case-asset" data-src="assets/cats-prototype-04.PNG" data-width="143" data-height="309" data-label="Cat app prototype screen 4"></div>
+          <div class="asset-slot case-asset" data-src="assets/cats-prototype-05.PNG" data-width="143" data-height="309" data-label="Cat app prototype screen 5"></div>
+          <div class="asset-slot case-asset" data-src="assets/cats-prototype-06.PNG" data-width="143" data-height="309" data-label="Cat app prototype screen 6"></div>
         </div>
       </section>
 
-      <section class="case-section">
-        <h2>Usability Testing</h2>
-        <p>After completing the prototype, I recruited six participants from an HCI class and conducted three rounds of usability testing. During the first two rounds, participants received an introduction, completed tasks, and then shared feedback through an interview and System Usability Scale survey.</p>
-        <h3>Usability Test Tasks</h3>
-        <ol><li>Create an account and select a cat breed.</li><li>Pet the cat in the main UI.</li><li>Navigate to the adoption documents page.</li><li>Select and place hardware.</li></ol>
+      <section class="case-section cats-usability-section">
+        <h2 class="cats-reference-title">Usability Testing</h2>
+        <p class="cats-reference-copy">Upon completion of my prototype, I recruited 6 participants from the HCI class for conducting three rounds of usability testing for the design.</p>
+        <p class="cats-reference-copy">For the first two rounds, participants were first provided with an introduction to the prototype, then they were given the following tasks to accomplish. I recorded the <strong>critical incidents</strong> where the participants faced difficulty while using the app. At the end of the test session, we did a short interview with the participants on their opinion and suggestion for the prototype and asked them to fill out a system usability scale survey.</p>
 
-        <div class="iteration">
+        <div class="cats-test-tasks">
+          <h3>Usability Test Tasks</h3>
+          <ol>
+            <li>Create an account and select a cat breed</li>
+            <li>Pet the cat in the main UI</li>
+            <li>Navigate to the adoption documents page</li>
+            <li>Select and place a hardware</li>
+          </ol>
+        </div>
+
+        <article class="cats-iteration cats-iteration--first">
           <h3>First Iteration</h3>
-          <div class="asset-row asset-row--2">
-            <div class="asset-slot case-asset" data-src="assets/cats-iteration-01-before.png" data-width="200" data-height="433" data-label="First iteration before"></div>
-            <div class="asset-slot case-asset" data-src="assets/cats-iteration-01-after.png" data-width="200" data-height="433" data-label="First iteration after"></div>
+          <div class="cats-iteration-layout cats-iteration-layout--first">
+            <div class="asset-slot case-asset" data-src="assets/cats-iteration-01-before.png" data-width="390" data-height="841" data-label="First iteration before"></div>
+            <span class="cats-iteration-arrow" aria-hidden="true">→</span>
+            <div class="asset-slot case-asset" data-src="assets/cats-iteration-01-after.PNG" data-width="309" data-height="666" data-label="First iteration after"></div>
+            <ul class="cats-change-list">
+              <li><span>Change 1:</span> Enlarge the Add button, and reduced its transparency.</li>
+              <li><span>Change 2:</span> Add a gesture menu.</li>
+              <li><span>Change 3:</span> Add an additional text signifier for function, shown when the icon is pressed.</li>
+            </ul>
           </div>
-          <ul><li>Enlarged the Add button and reduced its transparency.</li><li>Added a gesture menu.</li><li>Added a text signifier shown when an icon is pressed.</li></ul>
-        </div>
+        </article>
 
-        <div class="iteration">
+        <article class="cats-iteration cats-iteration--second">
           <h3>Second Iteration</h3>
-          <p>Participants wanted to choose the cat&apos;s age and name to build an emotional bond, and they were interested in learning how to choose food. The low intuitive score persisted, which led to a change in the third testing method.</p>
-          <div class="asset-row asset-row--2">
-            <div class="asset-slot case-asset" data-src="assets/cats-iteration-02.png" data-width="200" data-height="433" data-label="Second iteration screens"></div>
-            <div class="asset-slot case-asset" data-src="assets/cats-iteration-02.gif" data-width="251" data-height="453" data-label="Second iteration prototype animation"></div>
+          <p>The second round of usability testing followed the same process as the first round. Two main takeaways from the second evaluation are that people adopt cats of different ages, the cost is likely different to keep cats in different age groups, and users are also more likely to build an emotional bond with the virtual cat if they have the option to <strong>choose the age of cat and give their virtual pet a name.</strong> Another takeaway is that participants are interested in knowing <strong>how to choose the cat food</strong> they should be buying for their cat.<br>However, the <strong>low intuitive score persists</strong> after the implementation of the first iteration, which lead to a change on how I did the third usability test.</p>
+          <div class="cats-iteration-layout cats-iteration-layout--second">
+            <div class="asset-slot case-asset" data-src="assets/cats-iteration-02.png" data-width="237" data-height="512" data-label="Age selection and naming screen"></div>
+            <div class="asset-slot case-asset" data-src="assets/cats-iteration-02.gif" data-width="284" data-height="512" data-label="Second iteration prototype animation"></div>
+            <ul class="cats-change-list">
+              <li><span>Change 1:</span> Add the feature for age selection and naming the virtual cat after cat selection</li>
+              <li><span>Change 2:</span> Add food-related documents, accessible through both menu and main UI.</li>
+            </ul>
           </div>
-          <ul><li>Added age selection and naming after cat selection.</li><li>Added food-related documents accessible through the menu and main UI.</li></ul>
-        </div>
+        </article>
 
-        <div class="iteration">
+        <article class="cats-iteration cats-iteration--third">
           <h3>Third Iteration</h3>
-          <p>To investigate the low intuitive score, I skipped the walkthrough and handed the prototype directly to participants. Users immediately tried to touch the virtual cat without selecting an interaction tool. Icons alone also failed to communicate their meaning.</p>
-          <div class="asset-row asset-row--2">
-            <div class="asset-slot case-asset" data-src="assets/cats-iteration-03-touch.gif" data-width="251" data-height="453" data-label="Direct-touch interaction prototype"></div>
-            <div class="asset-slot case-asset" data-src="assets/cats-iteration-03-tutorial.gif" data-width="251" data-height="453" data-label="Tutorial prototype"></div>
+          <p>In order to figure out the low intuitive problem shown in the first two usability tests, I skipped the walk-through demo in the third usability test and handed the prototype to the participant for hands-on experience and tasks directly. I observed that as soon as the user enters the main UI, they try to directly interact with the virtual cat, without selecting the interaction tool.<br>Also, it seems the icons on the main UI do not pass through enough information for the user to know what they represent, and the user is unlikely to press on the icon if they do not know what the icon means. So the press-triggered text signifier implemented in the first iteration wasn&apos;t effective. Based on the result, I implemented the following changes in an attempt to resolve the issue.</p>
+          <div class="cats-iteration-layout cats-iteration-layout--third">
+            <div class="asset-slot case-asset" data-src="assets/cats-iteration-03-touch.gif" data-width="284" data-height="512" data-label="Direct-touch interaction prototype"></div>
+            <div class="asset-slot case-asset" data-src="assets/cats-iteration-03-tutorial.gif" data-width="284" data-height="512" data-label="Tutorial prototype"></div>
+            <ul class="cats-change-list">
+              <li><span>Change 1:</span> Touching the virtual cat triggers the pet mode directly.</li>
+              <li><span>Change 2:</span> Adding a tutorial process after the registration process.</li>
+            </ul>
           </div>
-          <ul><li>Touching the virtual cat now triggers pet mode directly.</li><li>Added a tutorial after registration.</li></ul>
-        </div>
+        </article>
       </section>
 
-      <section class="case-section">
-        <h2>Future Plan &amp; Takeaways</h2>
-        <p>For future evaluation, I recommend recruiting at least 30 participants with no pet-care experience. Redesigns or new features should be considered only when they are reflected in more than five percent of the data.</p>
-        <ol class="evaluation-steps">
-          <li>Provide a brief introduction to the prototype and testing process.</li>
-          <li>Ask participants to complete predefined tasks without additional instruction.</li>
-          <li>Provide a guided walkthrough of the prototype.</li>
-          <li>Allow additional hands-on experience without further instruction.</li>
-          <li>Ask participants to complete a SUS survey, cat-care quiz, and feedback survey.</li>
+      <section class="case-section cats-future-section">
+        <h2 class="cats-future-title">Future Plan &amp; Takeaways</h2>
+        <p class="cats-reference-copy">For the future evaluation plan, I&apos;d recommend hiring at least 30 participants with a pre-requisite of no pet caring experience. The session should follow the procedure as follows. However, redesigning or implementing a new feature would only be considered if it is reflected in more than 5% of the data.</p>
+        <ol class="cats-evaluation-steps">
+          <li>Brief introduction of the prototype and the testing process.</li>
+          <li>Instruct the participants to accomplish pre-defined tasks with no additional instruction.</li>
+          <li>Provide a walk-through demo of the prototype.</li>
+          <li>Additional hands-on experience with no further instruction</li>
+          <li>Ask participants to fill out a SUS survey, cat-care quiz and survey.</li>
         </ol>
-        <div class="takeaways">
-          <div class="takeaway"><strong>User testing is key.</strong> Design is a continuous process of improving the experience, so it is important to listen to feedback.</div>
-          <div class="takeaway"><strong>Don&apos;t just ask—observe.</strong> Watching people use the application revealed insights that participants did not always verbalize.</div>
-          <div class="takeaway"><strong>The best design comes from collaboration.</strong> Different perspectives inspire ideas, while technical knowledge helps ground them in practical constraints.</div>
-        </div>
+        <p class="cats-takeaways-intro">Some Key takeaways from this project:</p>
+        <ul class="cats-takeaways">
+          <li><strong>User testing is key:</strong> Design is a constant iteration of improving the experience for the end users, it is important to always find a way to collect and listen to user&apos;s feedback.</li>
+          <li><strong>Don&apos;t just ask questions, also observe:</strong> During user testing, I noticed how much information I am able to gather just by observing people using the application. Sometimes the action speaks louder than words.</li>
+          <li><strong>The best design comes from collaboration:</strong> It is inspiring to see how each teammate contributes to the project based on different perspectives. Non-technical people provide unlimited ideas and technical people help ground these ideas with the understanding of technical limitations.</li>
+        </ul>
         <div class="more-projects"><a class="button-link" href="../#projects">More Projects</a></div>
       </section>
     </div>
